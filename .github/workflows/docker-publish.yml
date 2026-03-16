@@ -7,7 +7,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_GROUP_NAME: citadel
+  IMAGE_GROUP_NAME: ${{ github.repository_owner }}
   TTS_IMAGE_NAME: sidecar-tts
   EXECUTION_IMAGE_NAME: sidecar-execution
 
