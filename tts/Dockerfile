@@ -13,6 +13,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY tts_server.py .
 COPY voices.npz .
 COPY voices.json .
+COPY README.md .
+COPY ROOT_README.md .
 
 EXPOSE 5050
 
