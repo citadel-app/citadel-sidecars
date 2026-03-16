@@ -12,6 +12,8 @@ RUN pip install --no-cache-dir --upgrade pip && pip install --no-cache-dir -r re
 # Copy source code
 COPY execution_server.py .
 COPY container_manager.py .
+COPY README.md .
+COPY ROOT_README.md .
 
 # Create directory for code execution (if needed locally, though we use sibling containers)
 RUN mkdir -p /code

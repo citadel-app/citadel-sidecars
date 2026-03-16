@@ -40,6 +40,9 @@ jobs:
             type=raw,value=latest,enable={{is_default_branch}}
             type=sha
 
+      - name: Copy Root README to TTS Context
+        run: cp README.md tts/ROOT_README.md
+
       - name: Build and push TTS Docker image
         uses: docker/build-push-action@v5
         with:
@@ -76,6 +79,9 @@ jobs:
             type=semver,pattern={{major}}.{{minor}}
             type=raw,value=latest,enable={{is_default_branch}}
             type=sha
+
+      - name: Copy Root README to Execution Context
+        run: cp README.md execution/ROOT_README.md
 
       - name: Build and push Execution Docker image
         uses: docker/build-push-action@v5
