@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+kokoro-onnx
+soundfile
+numpy
+flask
+flask-cors
+docker
+requests
+
